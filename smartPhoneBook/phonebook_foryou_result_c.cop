@@ -1,0 +1,53 @@
+This is a line.
+This is another line.
+#ECO V1.3 UTF-8;
+#ECOScheme COP1 V1.6
+# THIS name defines the structure of the file (all files with this name have this structure)
+#EDBDatabaseID PhoneBook
+# WHICH phonebook it is, values from 0 to 4
+#EDBTableID PHONE_PHONEBOOK_ID_2
+# UPDATE type: incremental or full update
+#EDBTableUpdateType FullUpdate
+# TABLEUpdateMode AddEntryMode or GivenInColumn
+#EDBTableUpdateMode GivenInColumn
+# SYNCTAG: this is more or less a dummy and just a sample how one could look like
+#EDBTableUpdateID Phone_Phonebook_ID_2_2010-10-28_16-09-34 
+
+
+#Column1 Contact_ID
+#Column2 EDBTableUpdateMode
+#Column3 FirstName_Ortho
+#Column4 LastName_Ortho
+
+
+#Format(Contact_ID) Ident
+#NumIDFormat(Contact_ID) Decimal
+#NumIDBinLength(Contact_ID) 16
+#AFType(Contact_ID) NumID
+#Cardin(Contact_ID) 1
+
+#Format(EDBTableUpdateMode) Ident
+#Cardin(EDBTableUpdateMode) 1
+#Values(EDBTableUpdateMode) a, r
+
+#Format(FirstName_Ortho) Quoted
+#Format(LastName_Ortho) Quoted
+
+#EDBKeyColumns(AddEntryMode) FirstName_ID
+#EDBKeyColumns(RemoveEntryMode) FirstName_ID
+900;a;"医院刘洪帅{新}";""
+901;a;"刘洪帅/作废";""
+902;a;"孔盈/旧";""
+903;a;"老 马兴利";""
+800;a;"江佳{老号}";""
+801;a;"王杰联通";""
+802;a;"王杰联通号";""
+803;a;"赵志东(医院)";""
+804;a;"赵志东(上海)";""
+805;a;"赵志东(上海检察院)";""
+806;a;"赵志东大帅哥";""
+807;a;"厂长赵志东";""
+808;a;"达康(书记)";""
+809;a;"赵书记";""
+195;a;"";"Nuance张工程师"
+
